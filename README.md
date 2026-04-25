@@ -1,25 +1,62 @@
-🌌 AstroWatch v2.4.1A 
-mathematically rigorous, offline-first Progressive Web App (PWA) for real-time Vedic Astrology, Ephemeris Tracking, and Vimshottari Dasa calculations.
+🌟 AstroWatch 3.1 - AI Automated Astrologer
 
-📖 OverviewAstroWatch is a highly advanced, self-contained astronomical watch face that combines a classic analog interface with precise Vedic astrological data. It eliminates the need for expensive, rate-limited external APIs by utilizing an internal mathematical engine capable of calculating planetary degrees, transits (Gochara), and Dasa timelines with extreme precision, right in your browser.
+AstroWatch is a high-precision, real-time Vedic Astrology dashboard. It combines a zero-latency offline spherical trigonometry ephemeris engine with an integrated Parashari AI Astrologer (powered by Google's Gemini AI) to provide deeply personalized astrological insights, natal charts, and current transits (Gochara).
 
-✨ Key Features🕰️ 
+🚀 What's New in Version 3.1
 
-The Cosmic Watch Face: A multi-layered visual dial displaying:
-Outer Rings: Current Time, 27 Nakshatras, and 12 Zodiac Signs (Rashis).
-Middle Rings: Astrological Houses (H1-H12) dynamically based on Ascendant (Lagna).
-Inner Rings: Real-time planetary transits (Gochara) overlapping the static Natal Chart.
+Integrated Parashari AI (Gemini 2.5 Flash): Click on any planetary placement, house, rashi, or nakshatra to instantly generate a personalized 3-sentence prediction adhering strictly to the classical principles of the Brihat Parashara Hora Shastra (BPHS).
 
-🪐 High-Precision Offline Engine (v2.4.1): 
+Smart API Automation: End-users no longer need to configure API keys! The app securely embeds a domain-locked API key for seamless use on GitHub Pages, while gracefully handling local development testing.
 
-Calculates Ephemeris entirely offline using JavaScript.
-Atomic Time Calibration: Automatically adjusts for historical Delta T ($\Delta$T) to sync Universal Time with Terrestrial Time.
-True Lahiri Ayanamsa: Baseline matched accurately to the Swiss Ephemeris.
-24-Term Meeus Lunar Array: Computes top complex lunar perturbations (Evection, Variation, Annual Equation) for an ultra-precise Moon degree.
+Custom Branding: Updated UI featuring customized application logos and a refined color palette.
 
-📜 Vimshottari Dasa Timeline: Calculates precise Mahadasha, Antardasha, and Pratyantardasha down to the exact day, fueled by the offline Moon engine.
+Enhanced Cloud Sync: Auto-syncs unlimited client profiles across devices using Firebase.
 
-☁️ Cloud Sync & PWA: Built-in Firebase support for securely saving profiles across devices. Operates as a Progressive Web App (PWA) for 100% offline mobile use.
+✨ Key Features
+
+1. Offline Ephemeris Engine: * Calculates planetary positions, Lagna (Ascendant), and True Moon degree mathematically without relying on external astrology APIs.
+
+Uses atomic time adjustments (Delta T) and real-time ayanamsa calculations.
+
+2. Interactive Cosmic Watch Face:
+
+A beautiful 5-ring concentric dial displaying:
+
+   1. Time/Nakshatras
+
+   2. Rashis (Zodiac Signs)
+
+   3. Houses (Bhavas)
+
+   4. Current Transits (Gochara)
+
+   5. Natal Placements (Birth Chart)
+
+3. Vimshottari Dasa Calculator:
+
+Automatically calculates current Mahadasha, Antardasha, and Pratyantardasha based on the exact natal Moon degree.
+
+Generates a timeline of upcoming Dasha changes.
+
+4. Time-Travel Mode:
+
+Manually fast-forward or rewind time by hours, days, months, or years to observe how transits and Dashas shift in real-time.
+
+5. Classical Vedic Lore:
+
+Built-in classical interpretations for all 9 Grahas, 12 Rashis, 12 Bhavas, and 27 Nakshatras.
+
+🛠️ Technical Stack
+
+   Frontend: React (Vite)
+   
+   Styling: Tailwind CSS, Lucide React (Icons)
+   
+   AI Engine: Google Gemini API (gemini-2.5-flash)
+   
+   Backend/Storage: Firebase (Auth & Firestore)
+   
+   Hosting: GitHub Pages
 
 📱 How to Install on Your PhoneAstroWatch is a fully certified Progressive Web App. You do not need the Google Play Store or Apple App Store to install it.
 
@@ -48,12 +85,47 @@ Building for Production (GitHub Pages)If you make changes to the code and want t
 2. The compiled application will be generated in the dist folder.
 3. Commit and push the contents of the dist folder to your live branch.
 
-🔬 The Mathematics (Why v2.4.1?)
+💻 Local Development Setup
 
-Earlier versions of AstroWatch exhibited a slight drift (up to 16-20 days) in Vimshottari Dasa calculations when compared to the massive Swiss Ephemeris database.
-This was solved in Version 2.4.1 by implementing:
+If you wish to clone and run this project locally on your machine:
 
-1. Delta T Interpolation: A 31-second discrepancy between human clock time and atomic time in the 1950s shifts the Moon by ~0.0047°. The engine now interpolates historical Delta T tables to eliminate this error.
-2. Jean Meeus Polynomials: The lunar engine now applies the top 24 trigonometric perturbation terms, tightening the offline longitudinal error margin to less than 0.01°.
+1. Clone the repository:
 
-   Developed and maintained by Dr. PS Deb. For educational and astrological research purposes.
+git clone [https://github.com/drpsdeb/AstroWatch-drpsdeb.git](https://github.com/drpsdeb/AstroWatch-drpsdeb.git)
+cd AstroWatch-drpsdeb
+
+
+2. Install Dependencies:
+
+npm install
+
+
+3. Configure the AI API Key for Local Testing:
+
+AstroWatch uses a "Smart Environment Detector" for its AI features.
+
+Open src/App.jsx and locate the callGemini function.
+
+Replace "PASTE_YOUR_LOCKED_KEY_HERE" with your Google Gemini API Key.
+
+Note: Ensure your Google Cloud API key restrictions allow requests from http://localhost:5173/* if you wish to test locally.
+
+4. Run the Local Server:
+
+npm run dev
+
+Hold Ctrl and click the http://localhost:5173 link in your terminal to open it.
+
+   🚀 Deployment to GitHub Pages
+
+To compile the latest code and push it to the live site:
+
+Stop the local dev server (Ctrl + C).
+
+Run the build command to package the code into the dist folder:
+
+npm run build
+
+Upload the contents of the newly updated dist folder to your GitHub repository.
+
+Created by Dr. P.S. Deb | Bridging ancient Vedic wisdom with modern computational technology.
