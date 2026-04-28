@@ -1,4 +1,4 @@
-🌟 AstroWatch 3.1 - AI Automated Astrologer
+🌟 AstroWatch 4.7.0 - AI Automated Astrologer
 
 AstroWatch is a high-precision, real-time Vedic Astrology dashboard. It combines a zero-latency offline spherical trigonometry ephemeris engine with an integrated Parashari AI Astrologer (powered by Google's Gemini AI) to provide deeply personalized astrological insights, natal charts, and current transits (Gochara).
 
