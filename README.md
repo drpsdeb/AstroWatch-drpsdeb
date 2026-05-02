@@ -1,27 +1,32 @@
-# AstroWatch (v4.9.1)
+# AstroWatch (v4.9.4)
 
-A lightweight, local, AI-powered Vedic Astrology system built with React and Google's Gemini AI. Designed for both beginners looking for simple guidance and expert astrologers tracking precise astronomical movements.
+A lightweight, local, AI-powered Vedic Astrology system built with React and Google's Gemini AI. Designed for both beginners looking for simple guidance and expert astrologers tracking precise astronomical movements and traditional charts.
 
-## Features
+## What is New in v4.9.4
 
-1. Local & Private: Runs entirely in your browser. Your Gemini API key and profiles are saved locally, not on a server.
+* Traditional D1 Charts: Seamlessly toggle between the Cosmic Orrery, Transit Watch, and fully interactive South Indian (Grid) or North Indian (Diamond) natal charts.
 
-2. Adaptive Interface: Choose Beginner Mode for simple AI life advice, or Expert Mode for full astronomical dials and calculations.
+* Smart Dropdown Navigation: A new, sleek view menu to instantly swap between chart styles and access the Classical Legend.
 
-3. Cosmic Orrery Mode: A breathtaking geocentric mechanical model of the solar system showing real-time planetary orbits.
+* Life Context Module: You can now input your actual life details (marital status, career phase, health notes) during setup. The AI uses this context to give highly specific, reality-based predictions instead of generic textbook quotes.
 
-4. Retrograde (Vakri) Engine: Mathematically calculates planetary rate-of-change to detect retrograde motion in real-time, tagging them with "R".
+* Smart Conjunctions (Yuti): If multiple planets occupy the same sign, clicking one will automatically reveal a button to analyze the combined energy of the conjunction.
 
-5. Time Machine Controls: Fast-forward or rewind the cosmos with +1 Day, +1 Month, and +1 Year buttons to watch transits unfold.
+## Core Features
 
-6. Astronomical Sunclock: Dynamic Day/Night diurnal band with precise Sunrise, Sunset, and Tithi (Lunar Phase) tracking.
+* Local & Private: Runs entirely in your browser. Your Gemini API key and profiles are saved locally, not on a server.
 
-7. Current Panchang: Live calculation of Vara, Tithi, Nakshatra, Yoga, and Karana.
+* Cosmic Orrery Mode: A breathtaking geocentric mechanical model of the solar system showing real-time planetary orbits.
 
-8. AI Predictions: Uses Gemini AI to give deeply personalized predictions based on your chart, current transits, and Dashas.
+* Retrograde (Vakri) Engine: Mathematically calculates planetary rate-of-change to detect retrograde motion in real-time, tagging them with "R".
 
-9. Multilingual AI: Natively generates readings in English, Hindi, Bengali, Tamil, Telugu, Malayalam, and Assamese.
+* Time Machine Controls: Fast-forward or rewind the cosmos with +1 Day, +1 Month, and +1 Year buttons to watch transits unfold.
 
+* Astronomical Sunclock: Dynamic Day/Night diurnal band with precise Sunrise, Sunset, and Tithi (Lunar Phase) tracking.
+
+* Current Panchang: Live calculation of Vara, Tithi, Nakshatra, Yoga, and Karana.
+
+* Multilingual AI: Natively generates readings in English, Hindi, Bengali, Tamil, Telugu, Malayalam, and Assamese.
 
  ## How to Install and Run
 
