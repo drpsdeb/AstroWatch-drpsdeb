@@ -1,10 +1,10 @@
-# AstroWatch (v4.9.4)
+# AstroWatch (v4.9.5)
 
 A lightweight, local, AI-powered Vedic Astrology system built with React and Google's Gemini AI. Designed for both beginners looking for simple guidance and expert astrologers tracking precise astronomical movements and traditional charts.
 
-## What is New in v4.9.4
+## What is New in v4.9.5
 
-* Traditional D1 Charts: Seamlessly toggle between the Cosmic Orrery, Transit Watch, and fully interactive South Indian (Grid) or North Indian (Diamond) natal charts.
+* Traditional D1 and D9 Charts: Seamlessly toggle between the Cosmic Orrery, Transit Watch, and fully interactive South Indian (Grid) or North Indian (Diamond) natal charts.
 
 * Smart Dropdown Navigation: A new, sleek view menu to instantly swap between chart styles and access the Classical Legend.
 
