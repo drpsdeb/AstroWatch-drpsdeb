@@ -1,16 +1,18 @@
-# AstroWatch (v4.9.6)
+# AstroWatch (v4.9.8)
 
-A lightweight, local, AI-powered Vedic Astrology system built with React and Google's Gemini AI. Designed for both beginners looking for simple guidance and expert astrologers tracking precise astronomical movements and traditional charts.
+A lightweight, local, AI-powered Vedic Astrology system built with React and Google's Gemini AI. Designed for both beginners looking for simple guidance and expert astrologers tracking precise astronomical movements, traditional vargas, and planetary strengths.
 
-## What is New in v4.9.6
+## What is New in v4.9.8
 
-* Traditional D1 and ,D6,D9,D10 and D20 Charts: Seamlessly toggle between the Cosmic Orrery, Transit Watch, and fully interactive South Indian (Grid) or North Indian (Diamond) natal charts.
+* Exact Sripati Shadbala: A mathematically rigorous calculation of planetary strength (Sthana, Dik, Kaala, Chesta) using exact angular distances. Viewable as a beautiful horizontal bar chart.
 
-* Smart Dropdown Navigation: A new, sleek view menu to instantly swap between chart styles and access the Classical Legend.
+* Functional Dignities (Maraka/Badhaka): Automatically calculates Benefics, Malefics, Marakas (Disease inflictors), and Badhakas (Obstruction creators) based on your exact Lagna (Ascendant), strictly following BPHS rules.
 
-* Life Context Module: You can now input your actual life details (marital status, career phase, health notes) during setup. The AI uses this context to give highly specific, reality-based predictions instead of generic textbook quotes.
+* Advanced Vargas Suite: Seamlessly toggle your secondary chart between Navamsha (D9 - Marriage), Dashamsha (D10 - Career), Shashthamsha (D6 - Health/Debts), and Vimshamsha (D20 - Spirituality). Available in both North and South Indian styles.
 
-* Smart Conjunctions (Yuti): If multiple planets occupy the same sign, clicking one will automatically reveal a button to analyze the combined energy of the conjunction.
+* Interactive AI Panchang: Toggle between your Natal (Birth) Panchang and the Transit (Current) Panchang. Click it to have the AI interpret how the 5 Limbs of Time are affecting your destiny.
+
+* Supercharged AI Context: The Gemini AI now silently processes your Shadbala scores, Maraka/Badhaka status, and Life Context notes before answering. It knows not just where a planet is, but how powerful and functional it is for you.
 
 ## Core Features
 
@@ -18,13 +20,17 @@ A lightweight, local, AI-powered Vedic Astrology system built with React and Goo
 
 * Cosmic Orrery Mode: A breathtaking geocentric mechanical model of the solar system showing real-time planetary orbits.
 
+* Traditional D1 Charts: Interactive South Indian (Grid) or North Indian (Diamond) natal charts.
+
 * Retrograde (Vakri) Engine: Mathematically calculates planetary rate-of-change to detect retrograde motion in real-time, tagging them with "R".
 
-* Time Machine Controls: Fast-forward or rewind the cosmos with +1 Day, +1 Month, and +1 Year buttons to watch transits unfold.
+* Time Machine Controls: Fast-forward or rewind the cosmos with +1 Day, +1 Month, and +1 Year buttons to watch transits unfold and Dashas change dynamically.
 
 * Astronomical Sunclock: Dynamic Day/Night diurnal band with precise Sunrise, Sunset, and Tithi (Lunar Phase) tracking.
 
-* Current Panchang: Live calculation of Vara, Tithi, Nakshatra, Yoga, and Karana.
+* Smart Conjunctions (Yuti): If multiple planets occupy the same sign, clicking one will automatically reveal a button to analyze the combined energy of the conjunction.
+
+* Life Context Module: Input your actual life details (marital status, career phase, health notes) during setup so the AI gives highly specific, reality-based predictions.
 
 * Multilingual AI: Natively generates readings in English, Hindi, Bengali, Tamil, Telugu, Malayalam, and Assamese.
 
