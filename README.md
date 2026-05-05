@@ -1,8 +1,8 @@
-# AstroWatch (v4.9.8)
+# AstroWatch (v4.9.9)
 
 A lightweight, local, AI-powered Vedic Astrology system built with React and Google's Gemini AI. Designed for both beginners looking for simple guidance and expert astrologers tracking precise astronomical movements, traditional vargas, and planetary strengths.
 
-## What is New in v4.9.8
+## What is New in v4.9.9
 
 * Exact Sripati Shadbala: A mathematically rigorous calculation of planetary strength (Sthana, Dik, Kaala, Chesta) using exact angular distances. Viewable as a beautiful horizontal bar chart.
 
@@ -13,6 +13,8 @@ A lightweight, local, AI-powered Vedic Astrology system built with React and Goo
 * Interactive AI Panchang: Toggle between your Natal (Birth) Panchang and the Transit (Current) Panchang. Click it to have the AI interpret how the 5 Limbs of Time are affecting your destiny.
 
 * Supercharged AI Context: The Gemini AI now silently processes your Shadbala scores, Maraka/Badhaka status, and Life Context notes before answering. It knows not just where a planet is, but how powerful and functional it is for you.
+
+* Aspect of planet is included for AI interpretation 
 
 ## Core Features
 
